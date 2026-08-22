@@ -150,6 +150,36 @@ article h2 {
 
 .publications ol.bibliography li .col-sm-8 {
   flex: 1 1 auto;
+  min-width: 0;
   max-width: none;
   width: auto;
+}
+
+.publications ol.bibliography li .title,
+.publications ol.bibliography li .author,
+.publications ol.bibliography li .periodical,
+.publications ol.bibliography li .links {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+@media (max-width: 575.98px) {
+  .publications ol.bibliography li .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .publications ol.bibliography li .abbr {
+    flex: 0 0 4.25rem;
+    max-width: 4.25rem;
+    width: 4.25rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .publications ol.bibliography li .col-sm-8 {
+    flex: 1 1 0;
+    padding-left: 0.65rem;
+    padding-right: 0;
+  }
 }
