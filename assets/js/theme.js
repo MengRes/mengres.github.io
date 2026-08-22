@@ -1,5 +1,24 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
+(function loadSiteCustomCss() {
+  if (document.getElementById("site-custom-css")) {
+    return;
+  }
+
+  const link = document.createElement("link");
+  link.id = "site-custom-css";
+  link.rel = "stylesheet";
+
+  const script = document.currentScript;
+  if (script && script.src) {
+    link.href = script.src.replace(/\/assets\/js\/theme\.js(?:\?.*)?$/, "/assets/css/site-custom.css");
+  } else {
+    link.href = "/assets/css/site-custom.css";
+  }
+
+  document.head.appendChild(link);
+})();
+
 // Toggle between light and dark only (no system / half-sun-moon mode).
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
