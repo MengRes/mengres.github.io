@@ -8,8 +8,7 @@ last_name: Zhang
 contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Ph.D. candidate in CSE at the University of Texas at Arlington. Research interests include medical image analysis, machine learning, and retrieval-augmented generation (RAG).
-footer_text: >
-  © 2026 Mengliang Zhang.
+footer_text:
 keywords: medical image analysis, machine learning, RAG, academic website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎓 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
