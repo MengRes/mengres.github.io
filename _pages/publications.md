@@ -2,7 +2,6 @@
 layout: page
 permalink: /publications/
 title: Selected Publications
-description: Selected publications in reverse chronological order.
 nav: true
 nav_order: 1
 ---

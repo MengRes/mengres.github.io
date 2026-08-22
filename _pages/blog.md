@@ -3,7 +3,7 @@ layout: default
 permalink: /blog/
 title: Blog
 description: Technical notes on medical image analysis, machine learning, and related tools.
-nav: true
+nav: false
 nav_order: 2
 pagination:
   enabled: true
