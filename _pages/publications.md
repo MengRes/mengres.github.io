@@ -11,10 +11,6 @@ nav_order: 1
 
 <link rel="stylesheet" href="{{ '/assets/css/publications-align.css' | relative_url }}">
 
-<!-- Bibsearch Feature -->
-
-{% include bib_search.liquid %}
-
 <div class="publications">
 
 {% bibliography %}
