@@ -125,20 +125,27 @@ article h2 {
 .publications ol.bibliography li .row {
   display: flex;
   flex-wrap: nowrap;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .publications ol.bibliography li .abbr {
   flex: 0 0 5.5rem;
   max-width: 5.5rem;
   width: 5.5rem;
+  margin-bottom: 0;
 }
 
-.publications ol.bibliography li .abbr .badge {
+.publications ol.bibliography li .abbr .badge,
+.publications ol.bibliography li .abbr abbr.badge {
   display: block;
   width: 100% !important;
   text-align: center;
   box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.publications ol.bibliography li .title {
+  margin-top: 0;
 }
 
 .publications ol.bibliography li .col-sm-8 {
