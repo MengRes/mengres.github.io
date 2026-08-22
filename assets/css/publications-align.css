@@ -43,6 +43,7 @@ article h2 {
     max-width: 280px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-bottom: var(--content-after-profile-gap, 1.25rem) !important;
     float: none !important;
   }
 
@@ -75,7 +76,7 @@ article h2 {
 
 .profile .more-info {
   margin-top: 0.45rem !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 0.75rem !important;
 }
 
 /* Icons only under photo — no other caption text */
@@ -86,6 +87,7 @@ article h2 {
   justify-content: center;
   gap: 0.55rem;
   margin-top: 0;
+  margin-bottom: 0.25rem;
 }
 
 .profile .more-info .profile-social a {
