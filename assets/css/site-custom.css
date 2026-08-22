@@ -1,8 +1,28 @@
 /* Site-wide custom styles (loaded on every page via theme.js). */
 
+:root {
+  --content-paragraph-gap: 1rem;
+  --content-section-gap: 1.75rem;
+  --content-after-profile-gap: 1.25rem;
+}
+
 /* Light/dark only — hide system-theme icon */
 #light-toggle-system {
   display: none !important;
+}
+
+/* Unified paragraph and section spacing */
+article p,
+.post > article p,
+.post article .clearfix > p {
+  margin-top: 0;
+  margin-bottom: var(--content-paragraph-gap);
+}
+
+.post h2,
+article h2 {
+  margin-top: var(--content-section-gap);
+  margin-bottom: 0.75rem;
 }
 
 /* Mobile nav: align theme toggle with nav links (icon was centered in 2rem box) */

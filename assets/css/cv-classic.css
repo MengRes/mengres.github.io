@@ -50,17 +50,17 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin: 1.35rem 0 0.55rem;
+  margin: var(--content-section-gap, 1.75rem) 0 0.75rem;
   padding-bottom: 0.2rem;
   border-bottom: 1px solid var(--global-divider-color, rgba(0, 0, 0, 0.15));
 }
 
 .cv-page h2:first-of-type {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
 .cv-page p {
-  margin: 0.35rem 0;
+  margin: 0.5rem 0;
 }
 
 .cv-page strong {
