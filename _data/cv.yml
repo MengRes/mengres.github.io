@@ -1,0 +1,70 @@
+cv:
+  name: Mengliang Zhang
+  label: Ph.D. Candidate, Computer Science and Engineering
+  email: mengliang.zhang@uta.edu
+  website: https://mengres.github.io
+  location: Arlington, TX, USA
+  image: ""
+  summary: Ph.D. candidate at the University of Texas at Arlington, advised by Prof. Yonghe Liu. Research interests include medical image analysis, machine learning, and retrieval-augmented generation (RAG).
+
+  social_networks:
+    - network: GitHub
+      username: MengRes
+    - network: Google Scholar
+      username: 018rpXkAAAAJ
+    - network: ORCID
+      username: 0009-0007-5681-8230
+
+  sections:
+    Education:
+      - institution: University of Texas at Arlington
+        area: Computer Science and Engineering
+        studyType: Ph.D. Candidate
+        start_date: 2022
+        end_date: Present
+        highlights:
+          - Advisor — Prof. Yonghe Liu
+          - Medical image analysis; pathology foundation models; multimodal medical VQA
+
+      - institution: Wuhan University
+        area: Physical Electronics
+        studyType: M.S.
+        start_date: 2017
+        end_date: 2020
+
+      - institution: China University of Geosciences, Wuhan
+        area: Electronics and Communications Engineering
+        studyType: B.S.
+        start_date: 2013
+        end_date: 2017
+
+    Teaching:
+      - bullet: University of Texas at Arlington — Teaching Assistant, 2022–Present
+      - bullet: CSE 6363 Machine Learning
+      - bullet: CSE 4309 Fundamentals of Machine Learning
+      - bullet: CSE 5360 Artificial Intelligence
+
+    Publications:
+      - title: Quantifying and Mitigating Hospital Domain Bias in Pathology Foundation Models using Adversarial Feature Disentanglement
+        publisher: Medical Imaging with Deep Learning (MIDL)
+        date: 2026
+
+      - title: Hospital-Specific Bias in Patch-Based Pathology Models
+        publisher: IEEE International Symposium on Biomedical Imaging (ISBI)
+        date: 2026
+
+      - title: A New Benchmark — Clinical Uncertainty and Severity Aware Labeled Chest X-Ray Images With Multi-Relationship Graph Learning
+        publisher: IEEE Transactions on Medical Imaging (TMI)
+        date: 2024
+
+      - title: Interpretable Medical Image Visual Question Answering via Multi-Modal Relationship Graph Learning
+        publisher: Medical Image Analysis (MedIA)
+        date: 2024
+
+      - title: Expert Knowledge-Aware Image Difference Graph Representation Learning
+        publisher: ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)
+        date: 2023
+
+    Service:
+      - label: Reviewer
+        details: MIDL (2023–2026); ACM MM (2023–2026); Computerized Medical Imaging and Graphics; Pattern Recognition

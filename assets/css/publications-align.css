@@ -1,0 +1,138 @@
+/* Hide system-theme (half sun / half moon) icon — site uses light/dark only */
+#light-toggle-system {
+  display: none !important;
+}
+
+/* Consistent section heading weight */
+.post h2,
+article h2 {
+  font-weight: 400;
+}
+
+/* News dates: left-align + monospace so columns look flush */
+.news table th[scope="row"] {
+  text-align: left !important;
+  white-space: nowrap;
+  vertical-align: top;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+/* News table: tighten date column width for cleaner alignment */
+.news table th[scope="row"] {
+  width: 9.5rem !important;
+  padding-right: 1rem !important;
+}
+
+/* Larger photo; bio width tracks remaining space (no middle gap) */
+@media (min-width: 576px) {
+  .profile {
+    width: 240px;
+    max-width: 240px;
+  }
+
+  .clearfix > p {
+    max-width: calc(100% - 240px - 1.5rem);
+  }
+}
+
+.profile {
+  margin-left: 1.5rem !important;
+}
+
+@media (max-width: 575.98px) {
+  .profile {
+    width: min(100%, 280px) !important;
+    max-width: 280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+  }
+
+  .clearfix > p {
+    max-width: 100% !important;
+  }
+
+  .news table {
+    width: 100%;
+  }
+
+  .news table th[scope="row"] {
+    width: 6.75rem !important;
+    min-width: 6.75rem;
+    padding-right: 0.65rem !important;
+    font-size: 0.85rem;
+  }
+
+  .news table td {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    word-break: break-word;
+  }
+}
+
+.profile img {
+  width: 100%;
+  height: auto;
+}
+
+.profile .more-info {
+  margin-top: 0.45rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* Icons only under photo — no other caption text */
+.profile .more-info .profile-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 0;
+}
+
+.profile .more-info .profile-social a {
+  color: var(--global-text-color);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.profile .more-info .profile-social a:hover {
+  color: var(--global-theme-color);
+}
+
+.profile .more-info .profile-social a i {
+  font-size: 1.05rem !important;
+}
+
+/* Align publication venue badges to a fixed column */
+.publications {
+  clear: both;
+}
+
+.publications ol.bibliography li .row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.publications ol.bibliography li .abbr {
+  flex: 0 0 5.5rem;
+  max-width: 5.5rem;
+  width: 5.5rem;
+}
+
+.publications ol.bibliography li .abbr .badge {
+  display: block;
+  width: 100% !important;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.publications ol.bibliography li .col-sm-8 {
+  flex: 1 1 auto;
+  max-width: none;
+  width: auto;
+}
