@@ -19,6 +19,25 @@
   document.head.appendChild(link);
 })();
 
+// Page title vs. shorter navbar label (e.g. "Selected Publications" / "Publications").
+document.addEventListener("DOMContentLoaded", () => {
+  const navLabelOverrides = [{ path: "/publications", label: "Publications" }];
+
+  document.querySelectorAll(".navbar-nav a.nav-link").forEach((link) => {
+    const pathname = new URL(link.href, window.location.origin).pathname.replace(/\/$/, "");
+    const override = navLabelOverrides.find((item) => pathname.endsWith(item.path));
+    if (!override) {
+      return;
+    }
+
+    link.childNodes.forEach((node) => {
+      if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+        node.textContent = ` ${override.label} `;
+      }
+    });
+  });
+});
+
 // Toggle between light and dark only (no system / half-sun-moon mode).
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
