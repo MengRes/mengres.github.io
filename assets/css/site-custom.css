@@ -12,6 +12,11 @@
 }
 
 /* Unified paragraph and section spacing */
+.post-description:empty {
+  display: none;
+  margin: 0;
+}
+
 article p,
 .post > article p,
 .post article .clearfix > p {
