@@ -1,6 +1,37 @@
 /* Site-wide custom styles (loaded on every page via theme.js). */
 
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+/* Self-hosted Source Sans 3 (OFL) — no Google Fonts requests */
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/source-sans-3/latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/source-sans-3/latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/source-sans-3/latin-600-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/source-sans-3/latin-700-normal.woff2") format("woff2");
+}
 
 :root {
   --content-paragraph-gap: 1rem;
@@ -73,8 +104,7 @@ footer.fixed-bottom {
 }
 
 article p,
-.post > article p,
-.post article .clearfix > p {
+.post > article p {
   margin-top: 0;
   margin-bottom: var(--content-paragraph-gap);
 }
