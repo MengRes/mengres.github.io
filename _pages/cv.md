@@ -13,7 +13,7 @@ nav_order: 3
 # Mengliang Zhang
 
 Ph.D. Candidate, Computer Science and Engineering  
-[mengliang.zhang@uta.edu](mailto:mengliang.zhang@uta.edu) · [mengres.github.io](https://mengres.github.io)
+{% al_email_protect_link site.data.socials.email %} · [mengres.github.io](https://mengres.github.io)
 
 Ph.D. candidate at the University of Texas at Arlington, advised by Prof. Yonghe Liu. Research interests include medical image analysis, machine learning, and retrieval-augmented generation (RAG).
 

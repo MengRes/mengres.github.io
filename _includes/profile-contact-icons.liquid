@@ -1,0 +1,24 @@
+{% assign email = site.data.socials.email %}
+{% assign email_parts = email | split: '@' %}
+<div class="profile-social contact-icons">
+  <a
+    href="#"
+    class="al-email-protect"
+    title="Email"
+    aria-label="Copy email address"
+    role="button"
+    data-eu="{{ email_parts[0] }}"
+    data-ed="{{ email_parts[1] }}"
+  >
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+  <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" title="Google Scholar" target="_blank" rel="noopener noreferrer">
+    <i class="ai ai-google-scholar"></i>
+  </a>
+  <a href="https://orcid.org/{{ site.data.socials.orcid_id }}" title="ORCID" target="_blank" rel="noopener noreferrer">
+    <i class="ai ai-orcid"></i>
+  </a>
+  <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-github"></i>
+  </a>
+</div>
