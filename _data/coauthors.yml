@@ -1,5 +1,4 @@
-# Optional: map co-author surnames to profile URLs for bibliography links.
-# Example:
+# Co-author profile URLs for bibliography links (optional).
 # smith:
 #   - firstname: ["John", "J."]
 #     url: https://example.edu/~jsmith
